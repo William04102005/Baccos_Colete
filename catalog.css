@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+html {
+    font-size: 10px;
+}
+:root{
+    --red:#f0cc849c;
+    --white:#edfaf5;
+    --dark:#1a1811;
+    --green: #ff91008a;
+    --white_brown: #d8a96b8a;
+    
+        
+
+}
+
+body {
+    
+    color: var(--dark);
+    background: var(--dark);
+    justify-content: center;
+}
+
+#container {
+    max-width: 1024px;
+    margin: 0 auto;
+    transform: translate(0%, 5%);
+}
+
+#container > header {
+    background: #000000;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+main {
+   
+    font-size: 20px;
+    padding: 1rem;
+}
+
+.titulocat{
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 40px;
+    color: #000000;
+    transform: translate(0%, 50%);
+    padding: 2px 5px;
+}
+
+
+/* NAV */
+
+.navigation2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 5px;
+    box-shadow: 0 0.1rem 0.5rem #c27501;
+    width: 100%;
+    background: var(--red);
+    transition: all 0.5s;
+   
+}
+.logo{
+    background: url('img_resized/IMG-20240414-WA0011 (1).png') no-repeat;
+    background-size: contain;
+    width: 130px;
+    height: 80px;
+    position: relative;
+    top: 5px;
+    z-index: 9;
+}
+
+nav {
+    background: #0a6082;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+
+nav ul li {
+    color: #000000;
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    color: #ecedea;
+    padding: 15px;
+}
+.nav-item2 {
+   
+    text-align: center;
+}
+
+/* MAIN */
+main > header {
+    display: none;
+    color: #e0954f;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
+    font-weight: 800;
+}   
+
+.produto { margin-bottom: 40px; cursor: pointer; }
+.produto p {
+    background-color: #000000;
+    color: #f0cc849c;
+    padding: 5px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    text-align: center;
+    object-fit: contain;
+    
+}
+.produto p:hover {
+     color: rgb(255, 153, 0);    
+}
+
+#produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    
+}
+
+
+    figure, figure img {
+        width: 310px;
+        height: 305px;
+       
+    }
+    
+   
+#fig2{
+    background-image: url('./img_resized/IMG_20231007_140036_747_resized.jpg');
+}
+#fig2:hover{
+    background-image: url('image\ \(1\)_resized.jpg');
+}
+
+#fig3{
+    background-image: url('./img_resized/IMG_20231007_140036_747_resized.jpg');
+}
+#fig3:hover{
+    background-image: url('./image\ \(2\)_resized\ \(1\).jpg');
+}
+
+#fig4{
+    background-image: url('./img_resized/IMG_20231007_140036_747_resized.jpg');
+}
+#fig4:hover{
+    background-image: url('image\ \(3\)_resized.jpg');
+}
+
+#fig5{
+    background-image: url('./img_resized/IMG_20231007_140036_747_resized.jpg');
+}
+#fig5:hover{
+    background-image: url('IMG_20230713_181918_289_resized_resized.jpg' );
+    
+}
+
+#fig6{
+    background-image: url('./img_resized/IMG_20240319_170518_957_resized.jpg');
+}
+#fig6:hover{
+    background-image: url('./img_resized/IMG_20240319_170519_069_resized.jpg');
+}
+
+footer .container{
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #000000;
+    transform: translate(0%, 400%);
+}
+
+footer .container img{
+    width: 120px;
+    object-fit: contain;
+}
+
+footer .container p{
+    font-weight: 600;
+    color: #f0cc849c;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 922px){
+
+    .text-gd{
+        font-size: 54px ;
+    }
+    
+    .text-md{
+        font-size: 28px;
+    }
+    
+    .text-pq{
+        font-size: 13px;
+    }
+
+    .text-title{
+        font-size: 18px;
+    }
+    
+}
+
+@media screen and (max-width: 740px){
+
+    .desktop-menu ul{
+        display: block;
+    }
+
+    .text-gd{
+        font-size:42px ;
+    }
+
+    .text-title{
+        font-size: 16px;
+    }
+
+
+    
+
+    header .right .imagem{
+        width: 100%;
+    }
+
+    .titulo{
+        min-height: 150px;
+    }
+
+    .down{
+        justify-content: space-between;
+        flex-direction: column;
+        min-height: 600px;
+    }
+
+    .box{
+        width:60%;
+    }
+
+    #About .box img{
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    #Menu .box h2{
+        margin-top: 10px;
+     }
+     
+    #Menu .box p{
+        font-size: 18px;
+        margin-top: 5px;
+        margin-bottom:0;
+        color: hsl(0, 100%, 97%);
+    }
+
+    .mobile-menu{
+        display: block;
+        z-index: 9999999;
+    }
+
+    #Contact .right img{
+        margin-top:60px;
+    }
+
+    footer .container{
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: 200px;
+    }
+    footer .container p{
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width: 648px){
+
+    .left{
+        width: 100%;
+        min-height:auto;
+        padding: 0 2%;
+    }
+
+    .right{
+        width: 100%;
+        min-height: auto;
+        padding: 0 2%;
+        margin-top: -60px;
+    }
+
+    .logo{
+        width: 110px;
+        top: 10px;
+        left: 5px;
+    }
+
+    img{
+        width: 90%;
+        
+    }
+
+    .call{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    header .left{
+        margin-top: -100px;
+    }
+
+    header .right .imagem{
+        width: 60%;
+    }
+
+    #About .right{
+        margin-top: 80px;
+    }
+
+    #About .right img{
+        width: 60%;
+    }
+
+    #Service .container .card{
+        width: 80%;
+        height: auto;
+        top: -20px;
+    }
+
+    #item-1:checked ~ .cards #song-3,
+    #item-2:checked ~ .cards #song-1,
+    #item-3:checked ~ .cards #song-2{
+        transform: translateY(-0%) scale(0.8);
+        opacity: 0.4;
+        z-index: 0;
+    }
+
+    #item-1:checked ~ .cards #song-2,
+    #item-2:checked ~ .cards #song-3,
+    #item-3:checked ~ .cards #song-1{
+        transform: translateY(25%) scale(0.8);
+        opacity: 0.4;
+        z-index: 0;
+    }
+
+    #Contact .content {
+        flex-direction: column;
+    }
+
+    #Contact .container .left{
+        height: 38vh;
+    }
+
+    #Contact .container .right{
+        height: 38vh;
+    }
+
+    #Contact .container .left .box{
+        width: 80%;
+        height: 35vh;
+    }
+
+    #Contact .container .right .box{
+        width: 80%;
+        height: 35vh;
+    }
+
+    #Contact .container .left .box h1{
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    #Contact .container .left .box form{
+        width: 80%;
+    }
+
+    #Contact .container .left .box input[type=text],
+    #Contact .container .left .box input[type=email],
+    #Contact .container .left .box input[type=submit]{
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+    #Contact .container .left .box .social{
+        margin-bottom: 20px;
+    }
+
+    #Contact .container .left .box i{
+        font-size: 22px;
+    }
+
+    #Contact .container .right .box{
+        width: 80%;
+        height: 35vh;
+        justify-content: flex-start;
+    }
+
+    #Contact .container .right .box h1{
+        font-size: 18px;
+    }
+
+    #Contact .container .right .box .icons{
+        width: 100px;
+        height: 100px;
+    }
+
+    #Contact .container .right .box .icons i {
+        font-size: 22px;
+    }
+
+    #Contact .container .right .box .text{
+        height: 150px;
+        width: 100px;
+    }
+
+    #Contact .container .right .box .text p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 428px){
+    
+    header .right .imagem{
+        width: 80%;
+    }
+}
